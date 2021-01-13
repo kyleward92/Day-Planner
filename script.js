@@ -1,2 +1,2 @@
-var date = moment().format("MMM Do YYYY");
-var hour = parseInt(moment().format("HH"));
+var date = moment().format("MMMM Do YYYY");
+var time = moment().format("H");

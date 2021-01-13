@@ -24,19 +24,16 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div id="largeBox">
-        <div class="box1"><strong>Hour</strong></div>
-        <div class="agendatextArea" id="agenda"><strong>Agenda<strong></div>
-        <div class="box3" id=noHover></div>
-
-      <div class="box1">9.00</div>
-      <textarea class="textArea" id="9"></textarea>
-      <div><button onclick="agendaItem9()" type="button" class="box3">Save</button></div>
-    </div>
-
+      <div id="9" class="row time-block">
+        <div class="col-1 hour">9 am</div>
+        <textarea class="description col-10"></textarea>
+        <button class="btn saveBtn col-1"><i class="far fa-save"></i></button>
+      </div>
+      
+    <script src="moment.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
-    <script src="moment.js"></script>
+    
   </body>
 </html>
