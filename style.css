@@ -33,7 +33,7 @@ body {
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border: 1px solid rgb(12, 12, 12);;
   }
   
   .hour {
@@ -68,5 +68,9 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  .border-dark {
+    border-width: 1px!important;
   }
   

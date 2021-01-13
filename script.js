@@ -20,10 +20,10 @@ var saveBtn = $('.saveBtn');
 
 var timeBlocks = [nine, ten, eleven, twelve, one, two, three, four, five, six, seven]
 
-console.log('currentHour:', currentHour)
+// console.log('currentHour:', currentHour)
 
 
-checkTime()
+
 
 
 
@@ -31,17 +31,18 @@ checkTime()
 function checkTime() {
   for (var i = 0; i < timeBlocks.length; i++) {
     var hour = parseInt(timeBlocks[i].val())
+    
     if (currentHour > hour) {
       $(timeBlocks[i]).addClass('past');
     console.log(timeBlocks[i].val());
 
     }
 
-    else if (currentHour === hour) {
+    else if  (currentHour = hour) {
       $(timeBlocks[i]).removeClass('past');
       $(timeBlocks[i]).addClass('present');
 
-    } else {
+    } else  {
       $(timeBlocks[i]).removeClass('present');
       $(timeBlocks[i]).removeClass('past');
 
@@ -78,5 +79,16 @@ $('#4 .description').val(localStorage.getItem('4'));
 $('#5 .description').val(localStorage.getItem('5'));
 $('#6 .description').val(localStorage.getItem('6'));
 $('#7 .description').val(localStorage.getItem('7'));
+
+function newFunction() {
+    if (currentHour < presentTime) {
+        $(textEntry).addClass("past");
+    } else if (currentHour > presentTime) {
+        $(textEntry).addClass("future");
+    } else {
+        $(textEntry).addClass("present");
+    }
+}
+;
 
 
